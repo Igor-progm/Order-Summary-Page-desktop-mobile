@@ -1,0 +1,114 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(../images/pattern-background-desktop.svg) top no-repeat, var(--main-bg);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.order-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+}
+
+.order-card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.order-card .card-info-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.order-card .card-info-container .title {
+    margin-top: 40px;
+}
+
+.order-card .card-info-container .description {
+    margin-top: 20px;
+    color: var(--text-gray);
+    padding: 0 50px;
+}
+
+.order-card .card-info-container .transaction {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 96%);
+    margin: 20px 60px;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.order-card .card-info-container .transaction img {
+    padding: 0 20px;
+}
+
+.order-card .card-info-container .transaction .transaction-type {
+    display: flex;
+}
+
+.order-card .card-info-container .transaction .transaction-type .plan {
+    font-weight: 700;
+}
+
+.order-card .card-info-container .transaction .transaction-type .price {
+    color: var(--text-gray);
+}
+
+.order-card .card-info-container .transaction .change {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    font-size: 14px;
+    color: blue;
+    font-weight: 700;
+}
+
+.order-card .card-info-container .transaction .change:hover {
+    color: #8a2be2;
+}
+
+.order-card .card-info-container .btn-pay {
+    font-family: 'Red Hat Display', sans-serif;
+    width: 75%;
+    padding: 15px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--btn-color);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(44, 40, 90, 0.4);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.order-card .card-info-container .btn-pay:hover {
+    background-color: blueviolet;
+}
+
+.order-card .card-info-container .cancel-order {
+    text-decoration: none;
+}
+
+.order-card .card-info-container .cancel-order p {
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: var(--text-gray);
+    font-size: 15px;
+}
+
+.order-card .card-info-container .cancel-order p:hover {
+    color: #000;
+} 
